@@ -43,4 +43,9 @@ env/
 # Spec Kit-specific files
 .genreleases/
 *.zip
+*.zip.sig
 sdd-*/
+
+# Amazon Q CLI artifacts
+q/
+amazonq-public-key.asc
