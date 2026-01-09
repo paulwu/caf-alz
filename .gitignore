@@ -44,7 +44,6 @@ env/
 .genreleases/
 *.zip
 *.zip.sig
-sdd-*/
 
 # Amazon Q CLI artifacts
 q/
