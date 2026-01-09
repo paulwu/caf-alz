@@ -90,6 +90,18 @@ As a platform engineer, I need automated drift detection to identify manual chan
 3. **Given** CI/CD pipeline exists, **When** drift is detected, **Then** automated notifications are sent to the team
 4. **Given** critical drift is detected, **When** plan runs, **Then** pipeline fails to prevent further deployments until drift is resolved
 
+
+### User Story 6 - Parametized Implementation (Priority: P1)
+
+As a platform engineer, I need a way to selectivily implement features selectivily using variables and switches. 
+
+**Why this priority**: Using variables allow me to set the features I would like to focus on deployment without having to build the rest.
+
+**Independent Test**: Can be tested by setting vairable "use_xxxx" to true. Setting to false should deprovision the resources as consistent with the default behavior of Terraform when code is removed.
+
+**Acceptance Scenarios**:
+1. **Given** environment-specific tfvars files, **When** I set the switch variables (using the "use_feature" naming convention, **Then** the feature is provisioned
+
 ---
 
 ### Edge Cases
